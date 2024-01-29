@@ -14,9 +14,17 @@
 
 #include <iostream>
 
+int togglebit(int n, int k){
+        return (n ^ (1 << (k-1)));
+    }
+
 int main()
 {
-    // Your code here
+    int a, b;
+    std::cout << "Enter an integer and the position of bit to be inverted: ";
+    std::cin >> a >> b;
+    
+    std::cout << togglebit(a, b);
 
     return 0;
 }

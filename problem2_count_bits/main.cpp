@@ -14,9 +14,22 @@
 
 #include <iostream>
 
+int countSetBits(int n) {
+    int count = 0;
+    while (n) {
+        count += n & 1;
+        n >>= 1;
+    }
+    return count;
+}
+
+
 int main()
 {
-    // Your code here
+    int n;
+    std::cin >> n;
+    int result = countSetBits(n);
 
+    std::cout << result << "\t";
     return 0;
 }

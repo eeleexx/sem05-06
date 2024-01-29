@@ -16,7 +16,14 @@
 
 int main()
 {
-    // Your code here
+    int n, k;
+    std::cin >> n >> k;
+
+    std::bitset<32> bits (n);
+
+    bits[k] = 1;
+
+    std::cout << bits << "\n" << n << "\n";
 
     return 0;
 }

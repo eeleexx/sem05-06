@@ -16,7 +16,15 @@
 
 int main()
 {
-    // Your code here
+    int n, k;
+    std::cin >> n >> k;
+    bool KBit = (n >> (k - 1)) & 1;
+
+    if (KBit){
+        std::cout << "Yes" << "\n";
+    } else {
+        std::cout << "No" << "\n";
+    }
 
     return 0;
 }

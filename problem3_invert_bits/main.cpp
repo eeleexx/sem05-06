@@ -15,7 +15,16 @@
 
 int main()
 {
-    // Your code here
+    int n;
+    std::cin >> n;
 
+    int complement = ~n;
+
+    for (int i = sizeof(int) * 8 - 1; i >= 0; --i) {
+            int bit = (complement >> i) & 1;
+            std::cout << bit;
+    }
+
+    std::cout << "\n" << complement;
     return 0;
 }
