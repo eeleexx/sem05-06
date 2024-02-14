@@ -15,7 +15,12 @@
 
 int main()
 {
-    // Your code here
+    int n, k;
+    std::cin >> n >> k;
+
+    int *nptr = &n, *kptr  = &k;
+
+    std::cout << *nptr + *kptr << "\n";
 
     return 0;
 }
